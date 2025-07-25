@@ -2,7 +2,6 @@
 
 **GoScrape** is a high-performance web scraper built in **Go** using Goroutines and Channels for efficient concurrency. It allows scraping of multiple target websites (e.g., news, blogs, product listings) with retry logic, error handling, and data storage in **SQLite** or **MongoDB**.
 
----
 
 ## 🚀 Features
 
@@ -13,7 +12,6 @@
 - 📊 Modular design with reusable scraper logic
 - 🧪 Logging and rate-limiting support
 
----
 
 ## 🧰 Tech Stack
 
@@ -23,7 +21,6 @@
 - Database: **SQLite** (default) / MongoDB (optional)
 - Config: **.env** file (optional)
 
----
 
 ## 📂 Project Structure
 
@@ -40,7 +37,6 @@ goscrape-fast-web-scraper-golang/
 └── README.md
 ```
 
----
 
 ## 🛠️ How It Works
 
@@ -50,7 +46,6 @@ goscrape-fast-web-scraper-golang/
 4. Store results in SQLite/MongoDB
 5. Wait for all tasks to complete
 
----
 
 ## 🧪 Example Targets
 
@@ -61,7 +56,6 @@ targets := []string{
 }
 ```
 
----
 
 ## ⚙️ Setup Instructions
 
@@ -84,7 +78,6 @@ cd goscrape-fast-web-scraper-golang
 go run main.go
 ```
 
----
 
 ## 🗃️ Output Format
 
@@ -95,20 +88,17 @@ Each article/product is stored in the `scraped.db` SQLite database with:
 - Scrape timestamp
 - Source
 
----
 
 ## 🐛 Error Handling
 
 - Automatic retries on HTTP failure
 - Timeout/resilience handling using Colly callbacks
 
----
 
 ## 🐳 Optional: Docker Support
 
 Add a Dockerfile to containerize the scraper for scheduled scraping in CI/CD or cloud.
 
----
 
 ## 🧩 Extend Ideas
 
@@ -116,13 +106,4 @@ Add a Dockerfile to containerize the scraper for scheduled scraping in CI/CD or 
 - Add support for JSON/CSV export
 - Schedule scraping every N minutes
 - Build a web frontend to view results
-
----
-
-## 📜 License
-
-MIT © 2025 YourName
-
----
-
-Built with ❤️ in Golang
+  
